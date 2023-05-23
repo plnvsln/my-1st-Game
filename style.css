@@ -6,9 +6,22 @@
 }
 .block {
   background-color: darksalmon;
-  bottom: 50px;
   height: 20px;
-  left: 50px;
   position: absolute;
   width: 100px;
+}
+
+.user {
+  background-color: rgb(148, 246, 117);
+  height: 20px;
+  position: absolute;
+  width: 100px;
+}
+
+.ball {
+  background-color: deeppink;
+  border-radius: 10px;
+  height: 20px;
+  position: absolute;
+  width: 20px;
 }
