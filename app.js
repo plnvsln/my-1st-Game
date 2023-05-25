@@ -105,10 +105,11 @@ function moveUser(e) {
 document.addEventListener("keydown", moveUser);
 
 // TEST: start a game
-/*function startGame() {
+function startGame() {
   timerId = setInterval(moveBall, 30);
   moveBall();
-} */
+  button.innerHTML = "Add difficulty";
+}
 
 //move a ball
 function moveBall() {
@@ -117,8 +118,9 @@ function moveBall() {
   drawBall();
   checkForCollisions();
 }
-timerId = setInterval(moveBall, 30);
-// TEST: button.addEventListener(`click`, startGame);
+//timerId = setInterval(moveBall, 30);
+// TEST:
+button.addEventListener(`click`, startGame);
 
 function checkForCollisions() {
   //check for block collision
