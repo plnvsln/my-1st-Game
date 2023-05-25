@@ -1,5 +1,6 @@
 const grid = document.querySelector(".grid");
 const scoreDisplay = document.querySelector("#score");
+const button = document.querySelector("button");
 const blockWidth = 100;
 const blockHeight = 20;
 const ballDiameter = 20;
@@ -103,6 +104,12 @@ function moveUser(e) {
 }
 document.addEventListener("keydown", moveUser);
 
+// TEST: start a game
+/*function startGame() {
+  timerId = setInterval(moveBall, 30);
+  moveBall();
+} */
+
 //move a ball
 function moveBall() {
   ballCurrentPosition[0] += xDirection;
@@ -111,6 +118,7 @@ function moveBall() {
   checkForCollisions();
 }
 timerId = setInterval(moveBall, 30);
+// TEST: button.addEventListener(`click`, startGame);
 
 function checkForCollisions() {
   //check for block collision

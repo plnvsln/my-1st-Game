@@ -8,10 +8,24 @@
     <title>My First Javascript Game</title>
   </head>
   <body>
-    <h1>My First Javascript Game</h1>
-    <div id="score">0</div>
-    <div class="grid"></div>
-
+    <div class="container">
+      <h1>Breakout</h1>
+      <h2>Rules are:</h2>
+      <p>
+        Using a single ball, the player must knock down as many bricks as
+        possible by using the walls and/or the paddle below to hit the ball
+        against the bricks and eliminate them. If the player's paddle misses the
+        ball's rebound, they will lose. Don't catch the ball with a corner of a
+        paddle.
+      </p>
+      <h3>
+        Score:
+        <span id="score">0</span>
+      </h3>
+      <!-- 
+      <button>START</button>-->
+      <div class="grid"></div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
